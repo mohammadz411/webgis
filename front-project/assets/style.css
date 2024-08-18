@@ -1,0 +1,235 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+#map{
+    width:100%;
+    height: 100vh;
+}
+
+
+.layer-switcher{
+    position: fixed;
+    top:75px;
+    left:10px;
+    z-index: 3;
+}
+
+.layer-switcher__icon{
+    background-image: url(./imgs/layers.svg);
+    width:28px;
+    height: 28px;
+}
+
+.layer-switcher__content{
+    display: none;
+    background-color: white;
+    margin-top:10px;
+    padding: 10px;
+    width: 200px;
+    border-radius: 5px;
+    border:1px solid rgba(0,60,136,.8);
+}
+
+
+.layer-switcher input{
+    margin:5px;
+}
+
+
+
+.drawing-control{
+    position: fixed;
+    top: 50px;
+    right: 10px;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row-reverse;
+}
+
+.drawing-control__icon{
+    width: 35px;
+    height: 35px;
+    background-size: 20px;
+    background-color: rgba(0,60,136,.8);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right:5px;
+    display: none;
+}
+
+.drawing-control__icon--toggler{
+    display: block;
+    margin-right: 0px;
+    background-image: url(./imgs/pencil-edit-button.svg);
+}
+
+
+.drawing-control__icon--point{
+    background-image: url(./imgs/pin.svg);
+}
+
+
+.drawing-control__icon--line{
+    background-image: url(./imgs/polyline.svg);
+}
+
+
+.drawing-control__icon--polygon{
+    background-image: url(./imgs/polygonal-chart-of-triangles.svg);
+}
+
+
+.drawing-control__icon--finish{
+    background-color:green;
+    background-image: url(./imgs/tick.svg);
+}
+
+
+.drawing-control__icon--clear{
+    background-color:red;
+    background-image: url(./imgs/cross.svg);
+}
+
+
+.identify{
+    position: fixed;
+    top: 130px;
+    right: 10px;
+    z-index: 3;
+}
+
+.identify__icon{
+    position: relative;
+    float:right;
+    width: 35px;
+    height: 35px;
+    background-image: url(./imgs/information.svg);
+    background-size: 20px;
+    background-color: rgba(0,60,136,.8);
+    background-position: center;
+    background-repeat: no-repeat;
+    z-index: 4;
+}
+
+.identify__content{
+    position: relative;
+    background-color: rgba(150, 172, 200, 0.9);
+    padding: 5px 5px 0px 5px;
+    width: 200px;
+    border-radius: 5px;
+    border: 1px solid rgba(0,60,136,.8);
+    opacity: 1;
+    z-index: 3;
+    display: none;
+}
+
+.identify__select{
+    text-align: center;
+}
+
+.identify__select select{
+    width:150px;
+}
+
+.identify__result{
+    padding:5px;
+    overflow-x: auto;
+}
+
+
+
+.measurement-control{
+    position: fixed;
+    top: 90px;
+    right: 10px;
+    z-index: 3;
+    display: flex;
+    flex-direction: row;
+    flex-flow: row-reverse;
+}
+
+.measurement-control__icon{
+    width: 35px;
+    height: 35px;
+    background-size: 20px;
+    background-color: rgba(0,60,136,.8);
+    background-position: center;
+    background-repeat: no-repeat;
+    margin-right:5px;
+    display: none;
+}
+
+.measurement-control__icon--toggler{
+    margin-right:0px;
+    display: block;
+    background-image: url(./imgs/ruler.svg);
+}
+
+.measurement-control__icon--distance{
+    background-image: url(./imgs/polyline.svg);
+}
+
+.measurement-control__icon--area{
+    background-image: url(./imgs/polygonal-chart-of-triangles.svg);
+}
+
+.tooltip-bottom{
+    position: fixed;
+    background-color: rgb(93 119 152 / 90%);
+    right: 50%;
+    transform: translateX(50%);
+    border-radius: 10px;
+    z-index: 5;
+    bottom: 5px;
+    color: white;
+    min-width: 150px;
+    text-align: center;
+    padding: 10px;
+    display: none;
+}
+
+
+.search-box{
+    position: fixed;
+    top:10px;
+    right:60px;
+    z-index: 5;
+    display: flex;
+    flex-direction: row;
+}
+
+.search-input{
+    height: 35px;
+    width:200px;
+    padding: 5px;
+    text-align: right;
+    direction: rtl;
+}
+
+.search-button{
+    width: 35px;
+    height: 35px;
+    background-image: url(./imgs/search.svg);
+    background-size: 20px;
+    background-color: rgba(0,60,136,.8);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+
+.user-button{
+    position: fixed;
+    top: 10px;
+    right: 10px;
+    z-index: 3; 
+    width: 35px;
+    height: 35px;
+    background-image: url(./imgs/man-user.svg);
+    background-size: 20px;
+    background-color: rgba(0,60,136,.8);
+    background-position: center;
+    background-repeat: no-repeat;  
+}

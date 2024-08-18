@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web GIS</title>
+    <script src="./assets/ol/ol.js"></script>
+    <link rel="stylesheet" href="./assets/ol/ol.css">
+    <link rel="stylesheet" href="./assets/style.css"/>
+</head>
+<body>
+    <div class="layer-switcher">
+        <div class="layer-switcher__icon"></div>
+        <div class="layer-switcher__content"></div>
+    </div>
+    <div class="drawing-control">
+        <div class="drawing-control__icon drawing-control__icon--toggler"></div>
+        <div class="drawing-control__icon drawing-control__icon--point"></div>
+        <div class="drawing-control__icon drawing-control__icon--line"></div>
+        <div class="drawing-control__icon drawing-control__icon--polygon"></div>
+        <div class="drawing-control__icon drawing-control__icon--finish"></div>
+        <div class="drawing-control__icon drawing-control__icon--clear"></div>
+    </div>
+
+    <div class="identify">
+        <div class="identify__icon"></div>
+        <div class="identify__content">
+            <div class="identify__select">
+            </div>
+            <div class="identify__result"></div>
+        </div>
+    </div>
+
+    <div class="measurement-control">
+        <div class="measurement-control__icon measurement-control__icon--toggler"></div>
+        <div class="measurement-control__icon measurement-control__icon--distance"></div>
+        <div class="measurement-control__icon measurement-control__icon--area"></div>
+    </div>
+
+    <div class="tooltip-bottom"></div>
+
+    <div class="search-box">
+        <div class="search-button"></div>
+        <input class="search-input" placeholder="جستجو" type="text"/>
+    </div>
+
+    <div class="user-button">
+    </div>
+
+    <div id="map"></div>
+    <script src="./assets/app.js"></script>
+</body>
+</html>
